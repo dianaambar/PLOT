@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <RelativeLayout
+       android:id="@+id/pilihan"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingTop="10dp"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <LinearLayout
+               android:id="@+id/places"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp">
+               <ImageButton
+                   android:id="@+id/btnPlaces"
+                   android:background="@drawable/places"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Places"
+                   android:layout_gravity="center"
+                   android:padding="5dp"
+                   android:textSize="17dp"
+                   android:textColor="#1f7a8b"/>
+           </LinearLayout>
+           <ImageView
+               android:layout_width="1dp"
+               android:layout_height="135dp"
+               android:background="@drawable/garisvertical"/>
+
+
+           <LinearLayout
+               android:id="@+id/culinary"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp">
+               <ImageButton
+                   android:id="@+id/btnCulinary"
+                   android:background="@drawable/culinary"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Culinary"
+                   android:layout_gravity="center"
+                   android:padding="5dp"
+                   android:textSize="17dp"
+                   android:textColor="#1f7a8b"/>
+           </LinearLayout>
+       </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@id/pilihan"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="1dp"
+        android:background="@drawable/garis"/>
+
+    <RelativeLayout
+        android:id="@+id/topPlaces"
+        android:layout_width="350dp"
+        android:layout_height="155dp"
+        android:layout_below="@id/pilihan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/box">
+
+        <TextView
+            android:id="@+id/txtTopPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Places"
+            android:textSize="15sp"
+            android:textColor="#1f7a8b"/>
+        <LinearLayout
+            android:id="@+id/btnbtnTopPlaces"
+            android:layout_below="@id/txtTopPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/prambanan"
+                android:layout_margin="5dp"
+                />
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/ratuboko"
+                android:layout_margin="5dp"/>
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/kadilangu"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More>>"
+            android:layout_below="@id/btnbtnTopPlaces"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#1f7a8b"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topCulinary"
+        android:layout_width="350dp"
+        android:layout_height="155dp"
+        android:layout_below="@id/topPlaces"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/txtTopCulinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Culinary"
+            android:textSize="15sp"
+            android:textColor="#1f7a8b"/>
+        <LinearLayout
+            android:id="@+id/btnbtnTopCulinary"
+            android:layout_below="@id/txtTopCulinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/culinary1"
+                android:layout_margin="5dp"
+                />
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/mieayam"
+                android:layout_margin="5dp"/>
+            <ImageButton
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:background="@drawable/kedaidarling"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See More>>"
+            android:layout_below="@id/btnbtnTopCulinary"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#1f7a8b"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</ScrollView>

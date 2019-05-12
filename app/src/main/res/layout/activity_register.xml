@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/plot"
+            android:background="#53b2cf">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="#00000000"
+                android:id="@+id/btnRegisBackButton"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Registrasi"
+                android:textAlignment="inherit"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etRegisFirstName"
+                android:layout_width="match_parent"
+                android:hint="First Name"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etRegisLastName"
+                android:layout_width="match_parent"
+                android:hint="Last Name"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textSize="8pt"/>
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/etRegisEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="8pt"/>
+        <EditText
+            android:id="@+id/etRegisUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etRegisPassword"
+                android:layout_width="match_parent"
+                android:hint="Password"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="8pt"/>
+        <EditText
+
+            android:inputType="textPassword"
+            android:id="@+id/etRegisConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btnRegisRegister"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:textSize="12pt"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:background="#53b2cf"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

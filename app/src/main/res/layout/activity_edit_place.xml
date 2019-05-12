@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abe6e9"
+    android:orientation="vertical"
+    tools:context="com.example.intanyoshanaoewen.plot.EditPlace">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:fontFamily="@font/abeakrg"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:fontFamily="@font/abeakrg"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        />
+
+    <EditText
+        android:id="@+id/editCategory"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+        android:fontFamily="@font/abeakrg"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Location Given"
+        android:fontFamily="@font/abeakrg"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF2D808E"
+        android:text="Find Location"
+        android:textAllCaps="false"
+        android:fontFamily="@font/abeakrg"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/abeakrg"
+            android:text="Suggest This"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            />
+        
+        <Switch
+            android:id="@+id/switchSuggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <android.support.design.widget.BottomNavigationView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+      </android.support.design.widget.BottomNavigationView>
+
+    </RelativeLayout>
+</LinearLayout>

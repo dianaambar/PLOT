@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "791497201076",
+    "firebase_url": "https://plot-bcbf2.firebaseio.com",
+    "project_id": "plot-bcbf2",
+    "storage_bucket": "plot-bcbf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791497201076:android:cfd13a56eb326f22",
+        "android_client_info": {
+          "package_name": "com.example.android.plot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791497201076-84uevh3d1ba83iqrseigh4fj5n6aqu9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.plot",
+            "certificate_hash": "93b5ac6c7f72643da1f0e18f32326f7ce045bb6e"
+          }
+        },
+        {
+          "client_id": "791497201076-dhbojee42pg15gemtoe8qctmsiv3mopg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFdjHXJtnSb_C63BGiJPFxBmdx_HHp2B4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791497201076-dhbojee42pg15gemtoe8qctmsiv3mopg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

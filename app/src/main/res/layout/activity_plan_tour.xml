@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.intanyoshanaoewen.plot.planTour">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tour Name"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/abeakrg"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editTourName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/abeakrg"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/editDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/abeakrg"
+            android:text="Dates Known"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switchDates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dates"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/abeakrg"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/picker_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"/>
+        <NumberPicker
+            android:id="@+id/picker_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"/>
+        <NumberPicker
+            android:id="@+id/picker_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        >
+    </DatePicker>
+    //Atogak nanti dari textview/edit view
+    dates ditaro datepickerdialog (di javanya)//
+
+
+    <Button
+        android:id="@+id/buttonStartPlot"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF2D808E"
+        android:text="Start Plotting!"
+        android:textAllCaps="false"
+        android:fontFamily="@font/abeakrg"
+        android:textSize="17sp"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

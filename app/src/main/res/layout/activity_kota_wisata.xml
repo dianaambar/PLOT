@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KotaWisata">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/kontenkonten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/plot"
+            android:background="#53b2cf">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="#00000000"
+                android:id="@+id/backbutton"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Select Destination        bnv "
+                android:textAlignment="inherit"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/plot">
+            <ImageButton
+                android:id="@+id/imgbtnLocationJogja"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_margin="17dp"
+                android:src="@drawable/coveryogyakarta"
+                android:importantForAutofill="auto"
+                android:scaleType="centerCrop"
+                android:background="@drawable/coveryogyakarta"/>
+            <ImageButton
+                android:id="@+id/imgbtnLocationBali"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_margin="17dp"
+                android:src="@drawable/coverbali"
+                android:scaleType="centerCrop"
+                android:background="@drawable/coverbali"/>
+            <ImageButton
+                android:id="@+id/imgbtnLocationJakarta"
+                android:layout_width="350dp"
+                android:layout_height="90dp"
+                android:layout_margin="17dp"
+                android:src="@drawable/coverjakarta"
+                android:scaleType="centerCrop"
+                android:background="@drawable/coverjakarta"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:id="@+id/navbar"
+            android:background="#53b2cf"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btPlot"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/round_event_note_black_18dp"/>
+                <Button
+                    android:id="@+id/btSearch"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_search_black_18dp"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/round_list_black_18dp"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_menu_black_18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

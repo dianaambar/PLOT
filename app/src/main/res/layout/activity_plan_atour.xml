@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanATour">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/plot"
+            android:background="#53b2cf">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="#00000000"
+                android:id="@+id/backbutton"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Search Location"
+                android:textAlignment="inherit"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/tourname"
+            android:layout_below="@id/plot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/tvTourName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tour Name :"
+                android:layout_marginLeft="40dp"/>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_below="@id/tvTourName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/name"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/destination"
+            android:layout_below="@id/tourname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/tvDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destination :"
+                android:layout_marginLeft="40dp"/>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_below="@id/tvDestination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/destination"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dateknown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/destination"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Known"/>
+            <Switch
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/date"
+            android:layout_below="@id/dateknown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:layout_marginLeft="40dp"/>
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_below="@id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/calendar"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnStartPlotting"
+            android:layout_below="@id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Start Plotting!"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

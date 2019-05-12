@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/plot"
+            android:background="#53b2cf">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="#00000000"
+                android:id="@+id/backbutton"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textAlignment="inherit"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/plot"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/loginfile">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etLoginEmail"
+                        android:layout_width="match_parent"
+                        android:hint="email"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/etLoginPassword"
+                        android:layout_width="match_parent"
+                        android:hint="Password"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Log In"
+            android:textSize="12pt"
+            android:layout_below="@id/loginfile"
+            android:layout_marginTop="30dp"
+            android:background="#53b2cf"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:id="@+id/btLogin"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:textSize="12pt"
+            android:layout_below="@id/btLogin"
+            android:layout_marginTop="30dp"
+            android:background="#53b2cf"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:id="@+id/btnRegister" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

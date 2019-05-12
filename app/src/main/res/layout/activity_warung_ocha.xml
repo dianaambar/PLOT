@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WarungOcha"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/plot"
+            android:background="#53b2cf">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="#00000000"
+                android:id="@+id/backbutton"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Warung Ocha"
+                android:textAlignment="inherit"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/MainGambar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plot">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#f9f9f9"
+                    android:src="@drawable/backbuttoncolor" />
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pantaibalanganmain" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ffffff"
+                    android:src="@drawable/nextbutton" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/garis1"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/MainGambar"
+            android:background="@drawable/garis"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/descBalangan"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Serve food from Indonesia, Asia, to Western."
+            android:layout_below="@id/garis1"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+        <ImageView
+            android:id="@+id/garis2"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/descBalangan"
+            android:background="@drawable/garis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_below="@id/garis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category : Culinary"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address : Jl. Raya Seminyak No. 52, Seminyak, Bali"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimated Price : RP100.000/person"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operational Hours : 11:00 AM - 23.00 PM"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/garis3"
+            android:layout_width="350dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/details"
+            android:background="@drawable/garis"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+        <LinearLayout
+            android:id="@+id/topNearPlaces"
+            android:layout_below="@id/garis3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Nearby Places"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. BIKU"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. The Lawn"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

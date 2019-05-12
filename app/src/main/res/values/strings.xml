@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PLOT</string>
+    <string name="descPantaiBalangan">One of the hidden beaches in Bali with a series of palm trees are neat, unique, interesting and make visitors feel at home.</string>
+    <string name="alamatPantaiBalangan">Address : Jl. Pantai Balangan, Desa Ungasan, Kelurahan Jimbaran, Kecamatan Kuta Selatan, Bali</string>
+    <string name="feePantaiBalangan"><![CDATA[Fee : Rp 5000/car & Rp 2000/Motorcyle]]></string>
+    <string name="descPantaiPandawa">Every tourist visiting the beach in this village of Kutuh, will be amazed by the beach scene. You will get clean white sand, as well as calm waves, free from pollution and merchants.</string>
+    <string name="alamatPantaiPandawa">Address : Jl. Pantai Pandawa, Nusa Dua, Kutuh, Kuta Selatan, Badung, Bali.</string>
+    <string name="descPuraBesakih">Over a thousand years old, Besakih Temple is known as the \'Mother Temple of Bali\'. Perched on the slopes of Mount Agung, at a lofty 1000 metres (3000 feet)Pura Besakih is the paramount Hindu temple on Bali.</string>
+    <string name="AddressPuraBesakih">Address : Jl. Raya Besakih, Karangasem, Indonesia</string>
+    <string name="title_activity_culinary">Culinary</string>
+    <string name="descCulinary1">It is a restaurant, tea lounge, as well as a joglo concept bookshop that serves a variety of foods ranging from food for breakfast, lunch, and dinner. Also provide food for children. Type of Indonesian and western food.</string>
+    <string name="descTheLawn">A beach lounge with semi outdoor and outdoor spots right in front of the beach. Providing seafood and pizza, and there are also some alcoholic drinks (wine, beer, champagne)</string>
+</resources>
